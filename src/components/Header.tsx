@@ -69,7 +69,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <a 
-                href="public/CurriculoDanielVieiradasilva.pdf" 
+                href="/CurriculoDanielVieiradasilva.pdf" 
                 download="CurriculoDanielVieiradasilva.pdf"
                 className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors duration-300"
                 aria-label="Baixar currículo"
@@ -93,8 +93,8 @@ const Header: React.FC = () => {
               )}
             </button>
             <a 
-              href="/curriculo.pdf" 
-              download="CurriculoDanielSilva.pdf"
+              href="/CurriculoDanielVieiradasilva.pdf" 
+              download="CurriculoDanielVieiradasilva.pdf"
               className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors duration-300"
               aria-label="Baixar currículo"
             >
