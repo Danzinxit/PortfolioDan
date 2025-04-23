@@ -7,20 +7,11 @@ const CursorEffect: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
-    const updateCursorPosition = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
-
-    const handleMouseOver = (e: MouseEvent) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const isClickable = 
-        target.tagName === 'A' || 
-        target.tagName === 'BUTTON' || 
-        target.closest('a') || 
-        target.closest('button') ||
-        window.getComputedStyle(target).cursor === 'pointer';
-      
+      const isClickable = target.closest('a, button') !== null;
       setIsPointer(isClickable);
+      setPosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleMouseDown = () => setIsActive(true);
@@ -28,16 +19,14 @@ const CursorEffect: React.FC = () => {
     const handleMouseEnter = () => setIsHidden(false);
     const handleMouseLeave = () => setIsHidden(true);
 
-    document.addEventListener('mousemove', updateCursorPosition);
-    document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mousedown', handleMouseDown);
     document.addEventListener('mouseup', handleMouseUp);
     document.addEventListener('mouseenter', handleMouseEnter);
     document.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
-      document.removeEventListener('mousemove', updateCursorPosition);
-      document.removeEventListener('mouseover', handleMouseOver);
+      document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mousedown', handleMouseDown);
       document.removeEventListener('mouseup', handleMouseUp);
       document.removeEventListener('mouseenter', handleMouseEnter);
