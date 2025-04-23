@@ -83,11 +83,17 @@ const Hero: React.FC = () => {
           <div className="md:w-1/2 relative">
             <div className="relative w-[280px] sm:w-[380px] mx-auto">
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-violet-500 to-indigo-500 blur opacity-75 animate-tiltBorder"></div>
-              <img 
-                src="/IMG_20250209_202707-removebg-preview.png" 
-                alt="Daniel Vieira" 
-                className="relative rounded-2xl w-full h-auto z-10 animate-float"
-              />
+              <div className="relative rounded-2xl w-full h-auto z-10 animate-float overflow-hidden">
+                <img 
+                  src="/IMG_20250209_202707-removebg-preview.svg" 
+                  alt="Daniel Vieira" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "https://raw.githubusercontent.com/Danzinxit/portfoliodanielvieira/main/public/IMG_20250209_202707-removebg-preview.svg";
+                  }}
+                />
+              </div>
               
               <div className="absolute -right-12 top-1/4 bg-white dark:bg-slate-800 shadow-lg rounded-lg px-4 py-2 animate-float2">
                 <span className="text-violet-600 dark:text-violet-400 font-bold">React</span>
