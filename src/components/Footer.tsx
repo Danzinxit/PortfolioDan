@@ -48,8 +48,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700/50 text-center text-slate-500 dark:text-slate-400 text-sm">
           <p>© {currentYear} Daniel Vieira. All rights reserved.</p>
-          <p className="mt-2">
-            Designed & Developed with ❤️
+          <p className="mt-2"> ❤️
           </p>
         </div>
       </div>

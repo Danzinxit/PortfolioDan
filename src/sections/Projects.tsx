@@ -18,30 +18,30 @@ const Projects: React.FC = () => {
       id: 1,
       title: 'Younik Hype',
       description: 'Plataforma de e-commerce especializada em produtos de streetwear e moda urbana.',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
+      image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1000&auto=format&fit=crop',
       tags: ['React', 'Node.js', 'PostgreSQL'],
       liveUrl: 'https://younik-hype.vercel.app/',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Danzinxit/YounikHype',
       category: 'web'
     },
     {
       id: 2,
       title: 'IA Chat',
       description: 'Aplicativo de chat com inteligência artificial para conversas personalizadas.',
-      image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop',
       tags: ['React', 'TypeScript', 'OpenAI'],
       liveUrl: 'https://iachatdan.vercel.app/',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Danzinxit/chatia',
       category: 'web'
     },
     {
       id: 3,
       title: 'Estoque AI',
       description: 'Sistema de gestão de estoque com recursos de inteligência artificial para previsão de demanda.',
-      image: 'https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
       tags: ['Next.js', 'TypeScript', 'MongoDB'],
-      liveUrl: 'https://estoqueainf.vercel.app/login',
-      githubUrl: '#',
+      liveUrl: 'https://estoqueainf.vercel.app',
+      githubUrl: 'https://github.com/Danzinxit/EstoqueEpamig',
       category: 'web'
     }
   ];

@@ -4,7 +4,7 @@ import { ArrowDown, ExternalLink, Github } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = 'Desenvolvedor Sênior';
+  const fullText = 'Desenvolvedor';
   const typingSpeed = 150;
   const [cursorVisible, setCursorVisible] = useState(true);
 
@@ -84,10 +84,9 @@ const Hero: React.FC = () => {
             <div className="relative w-[280px] sm:w-[380px] mx-auto">
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-violet-500 to-indigo-500 blur opacity-75 animate-tiltBorder"></div>
               <img 
-                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" 
-                alt="Professional headshot" 
-                className="relative rounded-2xl w-full h-
-                auto z-10 animate-float"
+                src="/src/fotos/IMG_20250209_202707-removebg-preview.png" 
+                alt="Daniel Vieira" 
+                className="relative rounded-2xl w-full h-auto z-10 animate-float"
               />
               
               <div className="absolute -right-12 top-1/4 bg-white dark:bg-slate-800 shadow-lg rounded-lg px-4 py-2 animate-float2">
