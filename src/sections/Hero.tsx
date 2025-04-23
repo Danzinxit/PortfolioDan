@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
             <div className="relative w-[280px] sm:w-[380px] mx-auto">
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-violet-500 to-indigo-500 blur opacity-75 animate-tiltBorder"></div>
               <img 
-                src="/fotos/IMG_20250209_202707-removebg-preview.png" 
+                src="/IMG_20250209_202707-removebg-preview.png" 
                 alt="Daniel Vieira" 
                 className="relative rounded-2xl w-full h-auto z-10 animate-float"
               />
