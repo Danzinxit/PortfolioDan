@@ -71,10 +71,10 @@ const Header: React.FC = () => {
               <a 
                 href="/CurriculoDanielVieiradasilva.pdf" 
                 download="CurriculoDanielVieiradasilva.pdf"
-                className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors duration-300"
+                className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-violet-500/20"
                 aria-label="Baixar currículo"
               >
-                <Download size={20} className="text-slate-700 dark:text-slate-300" />
+                <Download size={20} className="text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300" />
               </a>
             </li>
           </ul>
@@ -95,10 +95,10 @@ const Header: React.FC = () => {
             <a 
               href="/CurriculoDanielVieiradasilva.pdf" 
               download="CurriculoDanielVieiradasilva.pdf"
-              className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors duration-300"
+              className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-violet-500/20"
               aria-label="Baixar currículo"
             >
-              <Download size={20} className="text-slate-700 dark:text-slate-300" />
+              <Download size={20} className="text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300" />
             </a>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
