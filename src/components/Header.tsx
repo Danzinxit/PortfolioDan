@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Download } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Header: React.FC = () => {
@@ -67,6 +67,16 @@ const Header: React.FC = () => {
                 )}
               </button>
             </li>
+            <li>
+              <a 
+                href="public/CurriculoDanielVieiradasilva.pdf" 
+                download="CurriculoDanielVieiradasilva.pdf"
+                className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors duration-300"
+                aria-label="Baixar currículo"
+              >
+                <Download size={20} className="text-slate-700 dark:text-slate-300" />
+              </a>
+            </li>
           </ul>
           
           {/* Mobile navigation toggle */}
@@ -82,6 +92,14 @@ const Header: React.FC = () => {
                 <Moon size={20} className="text-slate-700" />
               )}
             </button>
+            <a 
+              href="/curriculo.pdf" 
+              download="CurriculoDanielSilva.pdf"
+              className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors duration-300"
+              aria-label="Baixar currículo"
+            >
+              <Download size={20} className="text-slate-700 dark:text-slate-300" />
+            </a>
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors duration-300"

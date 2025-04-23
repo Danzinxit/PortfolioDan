@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Button from '../components/Button';
-import { ArrowDown, ExternalLink, Github } from 'lucide-react';
+import { ArrowDown, ExternalLink, Github, Download } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [typedText, setTypedText] = useState('');
@@ -76,6 +76,14 @@ const Hero: React.FC = () => {
                 >
                   Perfil no GitHub
                 </Button>
+              </a>
+              <a 
+                 href="public/CurriculoDanielVieiradasilva.pdf" 
+                download="CurriculoDanielVieiradasilva.pdf"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-violet-600 text-white hover:bg-violet-700 transition-colors duration-300"
+              >
+                <Download size={20} className="mr-2" />
+                Baixar Currículo
               </a>
             </div>
           </div>
