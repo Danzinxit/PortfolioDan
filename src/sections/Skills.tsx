@@ -9,8 +9,8 @@ const Skills: React.FC = () => {
       title: 'Desenvolvimento Frontend',
       skills: [
         { name: 'React', level: 90 },
-        { name: 'Next.js', level: 85 },
-        { name: 'TypeScript', level: 80 },
+        { name: 'Next.js', level: 90 },
+        { name: 'TypeScript', level: 90 },
         { name: 'JavaScript', level: 95 },
         { name: 'HTML/CSS', level: 90 }
       ]
@@ -30,19 +30,18 @@ const Skills: React.FC = () => {
       icon: <Database size={24} />,
       title: 'Banco de Dados',
       skills: [
-        { name: 'PostgreSQL', level: 85 },
+        { name: 'OracleSQL', level: 85 },
         { name: 'MongoDB', level: 80 },
-        { name: 'MySQL', level: 75 },
-        { name: 'Redis', level: 70 }
+        { name: 'MySQL', level: 90 },
+        { name: 'Supabase', level: 90 }
       ]
     },
     {
       icon: <Cpu size={24} />,
       title: 'DevOps & Cloud',
       skills: [
-        { name: 'Docker', level: 80 },
+   
         { name: 'AWS', level: 75 },
-        { name: 'CI/CD', level: 85 },
         { name: 'Linux', level: 80 }
       ]
     },
@@ -61,7 +60,7 @@ const Skills: React.FC = () => {
       skills: [
         { name: 'UI/UX', level: 75 },
         { name: 'Figma', level: 80 },
-        { name: 'Adobe XD', level: 70 }
+        { name: 'Canva', level: 70 }
       ]
     }
   ];
