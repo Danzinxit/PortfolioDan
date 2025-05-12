@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = "https://raw.githubusercontent.com/Danzinxit/portfoliodanielvieira/main/public/danieli.png";
+                    target.src = "./public/dani.png";
                   }}
                 />
               </div>
