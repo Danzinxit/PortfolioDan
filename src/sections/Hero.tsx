@@ -78,8 +78,8 @@ const Hero: React.FC = () => {
                 </Button>
               </a>
               <a
-                href="/CurriculoDanielVieiradasilva.pdf"
-                download="CurriculoDanielVieiradasilva.pdf"
+                href="/CurriculoDanielVieira.pdf"
+                download="CurriculoDanielVieira.pdf"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-violet-500/30 transform-gpu"
               >
                 <Download className="w-5 h-5 mr-2 animate-pulse" />
@@ -93,8 +93,8 @@ const Hero: React.FC = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-violet-500 to-indigo-500 blur opacity-75 animate-tiltBorder"></div>
               <div className="relative rounded-2xl w-full h-auto z-10 animate-float overflow-hidden">
                 <img 
-                  src="/daniel.png" 
-                  alt="Daniel Vieira" 
+                  src="/dani.svg" 
+                  alt=" Daniel Vieira" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
