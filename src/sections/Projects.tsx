@@ -36,12 +36,12 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: 'Estoque AI',
-      description: 'Sistema de gestão de estoque com recursos de inteligência artificial para previsão de demanda.',
+      title: 'Power BI em Codigo',
+      description: 'Sistema de Power BI feito em Next.js sobre apostadores do brasileirao',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
       tags: ['Next.js', 'TypeScript', 'MongoDB'],
-      liveUrl: 'https://estoqueainf.vercel.app',
-      githubUrl: 'https://github.com/Danzinxit/EstoqueEpamig',
+      liveUrl: 'https://powerbibrasileirao.vercel.app/',
+      githubUrl: 'https://github.com/Danzinxit/PowerBiCodigoBraslieirao',
       category: 'web'
     }
   ];
